@@ -31,11 +31,13 @@ const renderOfficeCard=(data)=>{
       <p> ${office.address}</p>
       <p><a href="mailto:${office.email}">${office.email}</a></p>
       <p>${office.officePhone}</p>
+      <button class='btn'>Show in Maps</button>
     `;
     
     officeContainer.appendChild(officeCard); 
 
-    officeCard.addEventListener('click',()=>{
+    const btn = officeCard.querySelector('.btn')
+    btn.addEventListener('click',()=>{
       initMap([office])
     })
   });
