@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  color:white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main{
+  width: 70%;
+  height: 80%;
+  display: flex;
+  gap: 10px;
+}
+
+#map{
+  width: 400px;
+  height: 100%;
+}
+
+.left-container{
+  position: relative;
+  flex-grow: 1;
+ overflow-y: scroll;   
+ overflow-x: hidden;
+}
+
+.officeContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.searchInput{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 16px ;
+  font-size: medium;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.office-card{
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 18px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.office-card>h1{
+  margin-bottom: 10px;
+  font-size: xx-large;
+}
+
+.office-card>p{
+  font-size: medium;
+  color: white;
+  opacity: 0.8;
+}
+
+a{
+  color: white;
+}
